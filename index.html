@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/email_validation.js"></script>
 
     <title>Formulaire de contact</title>
 
@@ -14,15 +15,8 @@
 
 <body>
 
-    <form action="https://github.com/KrettelleNavarro/tp_form_mickael/formulaire_nvx_contact.git" method="post">
+    <form action="https://github.com/KrettelleNavarro/tp_form_mickael.git" method="post" enctype="multipart/form-data">
 
-
-        <form method="post">
-            <p>
-                <label for="mail">Votre mail ?</label> <input id="mail" name="mail" /><br />
-                <input type="submit" value="Vérifier le mail" />
-            </p>
-        </form>
         <ul>
             <li>
                 <label for="name">Nom:</label>
@@ -35,6 +29,7 @@
             <li>
                 <label for="mail">E-mail:</label>
                 <input type="email" id="mail" name="user_mail" />
+                <!-- <input type="submit" value="Vérifier le mail" /> -->
             </li>
             <li>
                 <label for="msg">Message:</label>

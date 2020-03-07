@@ -7,10 +7,13 @@
 -- Version du serveur :  5.7.11
 -- Version de PHP : 7.0.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
+SET SQL_MODE
+= "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT
+= 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone
+= "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,7 +22,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `formulaire_bdd_mickael`
+-- Base de données : `formulaire_bdd_michael`
 --
 
 -- --------------------------------------------------------
@@ -28,11 +31,16 @@ SET time_zone = "+00:00";
 -- Structure de la table `formulaire_nvx_contact`
 --
 
-CREATE TABLE `formulaire_nvx_contact` (
-  `id` int(11) NOT NULL,
-  `nom` varchar(256) NOT NULL,
-  `prenom` varchar(256) NOT NULL,
-  `email` varchar(256) NOT NULL,
+CREATE TABLE `formulaire_nvx_contact`
+(
+  `id` int
+(11) NOT NULL,
+  `nom` varchar
+(256) NOT NULL,
+  `prenom` varchar
+(256) NOT NULL,
+  `email` varchar
+(256) NOT NULL,
   `date_enregistrement` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -44,7 +52,8 @@ CREATE TABLE `formulaire_nvx_contact` (
 -- Index pour la table `formulaire_nvx_contact`
 --
 ALTER TABLE `formulaire_nvx_contact`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY
+(`id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -54,7 +63,8 @@ ALTER TABLE `formulaire_nvx_contact`
 -- AUTO_INCREMENT pour la table `formulaire_nvx_contact`
 --
 ALTER TABLE `formulaire_nvx_contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int
+(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
